@@ -26,6 +26,7 @@ h1 {
 .date { 
   font-size: 27px;
   text-align: center;
+  width: 100%
 }
 
 .weatherwidget {
@@ -163,7 +164,7 @@ a {
 }
 
 /* Use a media query to add a breakpoint at 800px: */
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1300px){
 
 	body {
 		margin: 5%;
