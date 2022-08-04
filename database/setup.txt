@@ -1,0 +1,5 @@
+This folder contains a sql document with the database that can be imported.
+The database contains one account with username: user and password: password which can be used,
+alternitivly an account can be created through the signup link
+
+If not connecting to database check the name of the database match with that in the config.php file

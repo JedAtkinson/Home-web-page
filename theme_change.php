@@ -33,9 +33,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 			  echo "Error updating record: " . $link->error;
 		}
 	}
+
+	$link->close();
 }
 
-$link->close();
 header("Location: http://localhost/home/index.php");
 exit();
 ?>

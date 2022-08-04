@@ -165,12 +165,14 @@ include 'head.php';
 	</script>
 
 	<?php
-	echo '<form action="theme_change.php" method="post">
-		<input id="lightMode" type="submit" name="theme-change" value="theme-change" style="background-color:' . $text_colour . '; color:' . $bg_colour . ';">
-	</form>';
-	?>
+	if ($loggedin){
+		echo '<form action="theme_change.php" method="post">
+			<input id="lightMode" type="submit" name="theme-change" value="theme-change" style="background-color:' . $text_colour . '; color:' . $bg_colour . ';">
+		</form>';
 
-	<a href="settings.php"><img src="images/cog.png" id="settings_button" alt="settings" width="25px" style="position: fixed; bottom: 22px; left: 140px;"></a>
+		echo '<a href="settings.php"><img src="images/cog.png" id="settings_button" alt="settings" width="25px" style="filter:' . $image_colour . ';position: fixed; bottom: 22px; left: 140px;"></a>';
+	}
+	?>
 
 </body>
 
