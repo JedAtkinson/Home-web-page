@@ -11,14 +11,14 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 	$image_colour = "invert(0%)";
 } else {
 	$loggedin = true;
-		// Include config file
-		require_once "config.php";
+    // Include config file
+    require_once "config.php";
 
-		$sql = 'SELECT theme FROM users WHERE id='.$_SESSION["id"].'';
-		$result = $link->query($sql);
-		while($row = $result->fetch_assoc()) {
-			$theme = $row["theme"];
-		}
+    $sql = 'SELECT theme FROM users WHERE id='.$_SESSION["id"];
+    $result = $link->query($sql);
+    while($row = $result->fetch_assoc()) {
+        $theme = $row["theme"];
+    }
 
 	if($theme == 'light'){
 		$bg_colour = "#e6e6e6";
@@ -33,13 +33,3 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 	}
 }
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-<title>Home</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" href="images/favicon.png">
-</head>

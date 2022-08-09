@@ -1,8 +1,7 @@
 body {
 	background-color: #333333;
 	color: #e6e6e6;
-	margin: 8%;
-	margin-top: 2%;
+	margin: 2% 8% 8%;
 	font-family: Optima, sans-serif;
 }
 
@@ -39,7 +38,6 @@ h1 {
 	border-radius: 300px;
 	background-color: #242424;
 	background-image: url("images/search.png");
-	position: left;
 	padding-left: 40px;
 	background-size: 30px;
 	background-repeat: no-repeat;
@@ -86,7 +84,6 @@ h2 {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-
 }
 
 .links p {
@@ -101,8 +98,7 @@ h2 {
 	background-color: #242424;
 	color: #e6e6e6;
 	border-radius: 10px;
-	margin: 10px;
-	margin-bottom: 30px;
+	margin: 10px 10px 30px;
 }
 
 form {
@@ -155,12 +151,15 @@ a {
 	zoom: 50%;
 	resize: both;
 	overflow: auto;
-	width:50%;
-	height:50%;
+	width: 50%;
+	height: 50%;
+	max-width: 65%;
+	min-width: 20%;
+	max-height: 110vh;
+	min-height: 40vh;
 	border: 5px solid black;
 	float:left;
-	padding: 4%;
-	padding-top: 1%;
+	padding: 1% 4% 4%;
 }
 
 /* Use a media query to add a breakpoint at 800px: */

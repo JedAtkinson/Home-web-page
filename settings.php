@@ -2,12 +2,24 @@
 include 'head.php';
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Settings</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png">
+</head>
+
 <body>
-<h1><a href="index.php"><img id="logo" src="images\pineapple.png" alt="logo" style="filter:<?php echo $image_colour; ?>;"></a>
-Settings</h1>
+<h1>
+    <a href="index.php"><img id="logo" src="images\pineapple.png" alt="logo" style="filter:<?php echo $image_colour; ?>;"></a>
+    Settings
+</h1>
 
 <div style="float:left; padding-right:10%;">
-	<p>Defult themes</p>
+	<p>Default themes</p>
 	<select id="theme-select" name="theme-select" style="color:<?php echo $text_colour; ?>; background-color:<?php echo $secondary_colour; ?>;">
     <option value="dark-theme">Dark theme</option>
     <option value="light-theme">Light theme</option>

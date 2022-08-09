@@ -2,6 +2,16 @@
 include 'head.php';
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png">
+</head>
+
 <body style="background-color:<?php echo $bg_colour; ?>; color:<?php echo $text_colour; ?>;">
 	<h1><a href="index.php"><img id="logo" src="images\pineapple.png" alt="logo" style="filter:<?php echo $image_colour; ?>;"></a> <span id="greating"></span> <?php if($loggedin == true){ echo htmlspecialchars($_SESSION["username"]); } ?>
 	<div class="loginLinks">
